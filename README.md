@@ -5,7 +5,7 @@ Este é um plugin jQuery que foi desenvolvido para facilitar o uso do [Handlebar
 
 Instalação:
 ------------
-$ bower install jhandlebars
+    $ bower install jhandlebars
 
 Iniciar:
 ------------
