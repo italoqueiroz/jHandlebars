@@ -1,7 +1,7 @@
 jHandlebars
 ================
 
-Este é um plugin jQuery para auxiliar o uso do handlebars. Sendo que seu foco é agilizar o trabalho e a implementação dos frontends.
+Este é um plugin jQuery que foi desenvolvido para facilitar o uso do [Handlebars](handlebarsjs.com/ "Handlebars"). Sendo que seu foco é agilizar o trabalho e a implementação para os frontends.
 
 
 Iniciar:
