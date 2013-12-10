@@ -8,8 +8,6 @@ Iniciar:
 ------------
 Para utilizar o plugin corretamente você deve importar as libs da jQuery e Handlebars.
 
-Ex:
-
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
@@ -29,6 +27,7 @@ $(document).ready(function(){
 });
 ```
 
+
 * Exemplo 2:
 
 ```javascript
@@ -40,6 +39,7 @@ $(document).ready(function(){
 });
 ```
 
+
 * Exemplo 3:
 
 ```javascript
@@ -50,6 +50,7 @@ $(document).ready(function(){
     });
 });
 ```
+
 
 * Exemplo 4:
 
