@@ -33,7 +33,7 @@ $(document).ready(function(){
 ```javascript
 $(document).ready(function(){
     $("#element").handlebars({
-      json:{title:'Second Template'},
+      json:{title:'Meu título'},
       template:'http://yourLocation.com.br/template.html'
     });
 });
@@ -57,7 +57,7 @@ $(document).ready(function(){
 ```javascript
 $(document).ready(function(){
     $("#element").handlebars({
-      json: {title:'Second Template'},
+      json: {title:'Meu título'},
       template:'<div class="entry"><h1>jHandlebars</h1><div class="body">{{title}}</div></div>'
     });
 });
