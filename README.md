@@ -22,7 +22,7 @@ Demo:
 $(document).ready(function(){
     $("#element").handlebars({
       json: 'http://yourLocation.com.br/data.json', 
-      template:'<div class="entry"><h1>jHandlebars via Html string</h1><div class="body">{{title}}</div></div>'
+      template:'<div class="entry"><h1>jHandlebars</h1><div class="body">{{title}}</div></div>'
     });
 });
 ```
@@ -58,7 +58,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#element").handlebars({
       json: {title:'Second Template'},
-      template:'<div class="entry"><h1>jHandlebars via Html string</h1><div class="body">{{title}}</div></div>'
+      template:'<div class="entry"><h1>jHandlebars</h1><div class="body">{{title}}</div></div>'
     });
 });
 ```
