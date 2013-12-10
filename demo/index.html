@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jHandlebars</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
+		<script src="../dist/jquery.jhandlebars.js"></script>
+        <style type="text/css">
+            html {
+                background-image: url("http://handlebarsjs.com/images/noise.png"), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);
+                background-image: url("http://handlebarsjs.com/images/noise.png"), radial-gradient(top center, #f7931e, #f15a24 750px);
+                background-color: #f7931e;
+                width: 100%;
+                height: 100%;
+                font-family: Helvetica, sans-serif;
+            }
+
+            body {
+                margin: 10px auto;
+                width: 50%;
+            }
+
+            .template {
+                background: #fff;
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 30px;
+                border-radius: 19px;
+                box-shadow: 1px 4px 12px #7E2C0F;
+            }
+
+            .legend {
+                text-align: left;
+                font-size: 0.7em;
+                color: #777;
+                border-bottom: 1px dotted #777;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .template #click {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                text-decoration: none;
+                display: block;
+                color: white;
+                margin-top: 30px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+                text-align: center;
+                background-color: #c26c07;
+                background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f38709), color-stop(100%, #c26c07));
+                background-image: -webkit-linear-gradient(#f38709, #c26c07);
+                background-image: -moz-linear-gradient(#f38709, #c26c07);
+                background-image: -o-linear-gradient(#f38709, #c26c07);
+                background-image: -ms-linear-gradient(#f38709, #c26c07);
+                background-image: linear-gradient(#f38709, #c26c07);
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -o-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -khtml-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+            .gist {
+                font-size: 0.7em;
+                margin-top: 20px;
+            }
+        </style>
+	</head>
+	<body>
+        <div class="template">
+            <div class='legend'>jHandlebars compile template string param and json URL</div>
+            <div id="template_first" class='content'></div>
+            <script src="https://gist.github.com/italoqueiroz/7890211.js"></script>
+        </div>
+        <div class="template">
+            <div class='legend'>jHandlebars compile template Url and json object param</div>
+            <div id="template_second" class="content"></div>
+            <a id='click' href="#this">Change layout via AJAX</a>
+            <script src="https://gist.github.com/italoqueiroz/7890306.js"></script>
+        </div>
+
+        <script type="text/javascript">
+			$(function() {
+				$("#template_first").handlebars({json: './data.json', template:'<div class="entry"><h1>jHandlebars via Html string</h1><div class="body">{{title}}</div></div>'});
+
+                var template = 0;
+                $('#click').click(function(event){
+                    event.preventDefault();
+                    if (template == 0) {
+                        template = 1;
+                        $("#template_second").handlebars({json:{title:'Second Template'}, template:'./template.html'});
+
+                    } else {
+                        template = 0;
+                        $("#template_second").handlebars({json:{title:'Third Template'}, template:'./template.html'});
+                    }
+                }).click();
+			});
+		</script>
+	</body>
+</html>

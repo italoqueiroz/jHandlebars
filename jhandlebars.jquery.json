@@ -1,0 +1,37 @@
+{
+	"name": "jHandlebars",
+	"title": "jQuery Handlebars",
+	"description": "Plugin jQuery to Handlebars.",
+	"keywords": [
+		"jquery",
+		"handlebars",
+		"plugins"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Ítalo Queiroz",
+		"email": "italoqueiroz@gmail.com",
+		"url": "https://github.com/italoqueiroz"
+	},
+	"maintainers": [
+		{
+            "name": "Ítalo Queiroz",
+            "email": "italoqueiroz@gmail.com",
+            "url": "https://github.com/italoqueiroz"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://italoqueiroz.mit-license.org/"
+		}
+	],
+	"bugs": "https://github.com/italoqueiroz/jHandlebars/issues",
+	"homepage": "https://github.com/italoqueiroz/jHandlebars",
+	"docs": "https://github.com/italoqueiroz/jHandlebars#readme",
+	"download": "https://github.com/italoqueiroz/jHandlebars/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.4",
+        "handlebars" : ">=1.0"
+	}
+}
