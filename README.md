@@ -3,6 +3,9 @@ jHandlebars
 
 Este é um plugin jQuery que foi desenvolvido para facilitar o uso do [Handlebars](handlebarsjs.com/ "Handlebars"). Sendo que seu foco é agilizar o trabalho e a implementação para os frontends.
 
+Instalação:
+------------
+$ bower install jhandlebars
 
 Iniciar:
 ------------
